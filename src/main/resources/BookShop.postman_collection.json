@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "aadda44f-e254-460e-bc5d-c3a6d1789ca5",
+		"name": "BookShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29657410"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "getAllBooks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/book"
+					},
+					"response": []
+				},
+				{
+					"name": "getBookById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/book/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "addBookToCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookId\" : 2\n    // \"cartId\" : 1\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/cart"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBookFromCart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/cart/1"
+					},
+					"response": []
+				},
+				{
+					"name": "viewCart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/cart/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
